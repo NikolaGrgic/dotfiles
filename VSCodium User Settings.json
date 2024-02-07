@@ -68,11 +68,13 @@
     "git.autofetch": "all",
     "git.autofetchPeriod": 60,
     "git.branchSortOrder": "alphabetically",
+    "git.confirmSync": false,
     "git.fetchOnPull": true,
     "git.inputValidationLength": 250,
     "git.inputValidationSubjectLength": 100,
     "git.pruneOnFetch": true,
     "git.showPushSuccessNotification": true,
+    "html.format.extraLiners": "html, body",
     "html.format.indentHandlebars": true,
     "html.format.indentInnerHtml": true,
     "html.format.maxPreserveNewLines": 2,
@@ -107,19 +109,19 @@
     "terminal.integrated.gpuAcceleration": "on",
     "terminal.integrated.hideOnStartup": "whenEmpty",
     "terminal.integrated.ignoreProcessNames": [
-        "starship",
-        "oh-my-posh",
         "bash",
-        "zsh",
-        "kitty"
+        "kitty",
+        "oh-my-posh",
+        "starship",
+        "zsh"
     ],
     "terminal.integrated.lineHeight": 1.2,
     "terminal.integrated.localEchoExcludePrograms": [
-        "vim",
-        "vi",
+        "codium",
         "nano",
         "tmux",
-        "codium"
+        "vi",
+        "vim"
     ],
     "terminal.integrated.rightClickBehavior": "default",
     "terminal.integrated.sendKeybindingsToShell": true,
@@ -127,20 +129,24 @@
     "terminal.integrated.smoothScrolling": true,
     "terminal.integrated.stickyScroll.enabled": true,
     "terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
+    "todo-tree.filtering.excludeGlobs": [
+        "**/node_modules",
+        "**/node_modules/**"
+    ],
     "todo-tree.general.enableFileWatcher": true,
     "todo-tree.general.tags": [
         "BUG",
         "FIXME",
-        "TODO",
         "FUTURE",
-        "NOTE"
+        "NOTE",
+        "TODO"
     ],
     "todo-tree.highlights.backgroundColourScheme": [
-        "#f7768e",
-        "#f7768e",
-        "#ff9e64",
+        "#7aa2f7",
         "#bb9af7",
-        "#7aa2f7"
+        "#f7768e",
+        "#f7768e",
+        "#ff9e64"
     ],
     "todo-tree.highlights.foregroundColourScheme": [
         "white"
@@ -152,9 +158,9 @@
     "typescript.format.enable": false,
     "typescript.implementationsCodeLens.enabled": true,
     "typescript.implementationsCodeLens.showOnInterfaceMethods": true,
-    "typescript.preferGoToSourceDefinition": true,
     "typescript.preferences.preferTypeOnlyAutoImports": true,
     "typescript.preferences.quoteStyle": "double",
+    "typescript.preferGoToSourceDefinition": true,
     "typescript.referencesCodeLens.enabled": true,
     "update.enableWindowsBackgroundUpdates": false,
     "update.mode": "start",
@@ -179,9 +185,5 @@
     "workbench.tree.enableStickyScroll": true,
     "workbench.tree.indent": 16,
     "workbench.tree.renderIndentGuides": "none",
-    "workbench.welcomePage.walkthroughs.openOnInstall": false,
-    "todo-tree.filtering.excludeGlobs": [
-        "**/node_modules",
-        "**/node_modules/**"
-    ]
+    "workbench.welcomePage.walkthroughs.openOnInstall": false
 }
