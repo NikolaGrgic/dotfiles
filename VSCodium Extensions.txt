@@ -1,0 +1,9 @@
+dbaeumer.vscode-eslint
+tamasfe.even-better-toml
+ms-vscode.vscode-typescript-next
+PKief.material-icon-theme
+csstools.postcss
+rust-lang.rust-analyzer
+bradlc.vscode-tailwindcss
+Gruntfuggly.todo-tree
+enkia.tokyo-night
