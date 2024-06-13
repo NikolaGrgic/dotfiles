@@ -133,7 +133,6 @@
 	"terminal.integrated.sendKeybindingsToShell": true,
 	"terminal.integrated.shellIntegration.history": 1000,
 	"terminal.integrated.smoothScrolling": true,
-	"terminal.integrated.stickyScroll.enabled": true,
 	"terminal.integrated.tabs.defaultColor": "terminal.ansiBlue",
 	"todo-tree.filtering.excludeGlobs": [
 		"**/node_modules",
@@ -190,5 +189,7 @@
 	"workbench.tree.enableStickyScroll": true,
 	"workbench.tree.indent": 16,
 	"workbench.tree.renderIndentGuides": "none",
-	"workbench.welcomePage.walkthroughs.openOnInstall": false
+	"workbench.welcomePage.walkthroughs.openOnInstall": false,
+	"window.customTitleBarVisibility": "auto",
+	"redhat.telemetry.enabled": false
 }
