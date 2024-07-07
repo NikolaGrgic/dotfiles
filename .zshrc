@@ -1,6 +1,14 @@
 ## Options
 setopt PROMPT_SUBST
 
+HISTFILE=~/.zsh_history
+HISTSIZE=10000
+SAVEHIST=10000
+
+setopt SHARE_HISTORY
+
+export PATH="$PATH:/home/nikola/.local/bin"
+
 ## Autoloads
 autoload -U colors && colors
 eval "$(zoxide init zsh --no-cmd --cmd cd)"
@@ -14,25 +22,25 @@ function path_info() {
 alias ls="exa"
 alias lsf="ls -l -f -h -a --sort=name --no-permissions --no-user --color=auto --icons"
 alias lsd="ls -l -F -T -R -a --sort=name --no-permissions --no-user --level=1 --color=auto --icons"
-alias cat="bat"
+alias cat="batcat"
 alias grep="rg"
 
-## Pacman
-alias pm="sudo pacman"
-alias pmi="pm -Syyu"
-alias pmui="pm -Rcns"
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-## Paru
-alias pa="paru"
-alias pai="paru -Syyu"
-alias paui="paru -Rcns"
-
-## pnpm
 export PNPM_HOME="/home/nikola/.local/share/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
+
+export ANDROID_HOME=$HOME/Android/Sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export FLYCTL_INSTALL="/home/nikola/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
 
 ## Keybinds (SMKX/RMKX Variants)
 
@@ -83,4 +91,4 @@ bindkey '\e[Z' reverse-menu-complete
 
 PROMPT='%F{8}[%n@%m]$reset_color %F{7}$(path_info) %%$reset_color '
 
-neofetch
+fastfetch
